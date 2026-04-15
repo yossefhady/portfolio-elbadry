@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Graphic Designer</title>
+  
+  <!-- Modern Brutalist Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+
+  <!-- Noise Overlay -->
+  <div class="noise"></div>
+
+  <div class="lenis-container">
+    <header class="header">
+      <div class="nav-brand staggered-item">GD.</div>
+      <nav class="nav-links">
+        <a href="#work" class="staggered-item">WORK</a>
+        <a href="#about" class="staggered-item">ABOUT</a>
+        <a href="#contact" class="staggered-item">CONTACT</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Branding Modal / Expanded View -->
+      <div class="project-modal" id="projectModal" data-lenis-prevent>
+        <div class="modal-close" id="modalClose">CLOSE (X)</div>
+        <div class="modal-content">
+          <div class="modal-gallery" id="modalGalleryImages">
+            <!-- Brand album images injected via JS -->
+          </div>
+          <div class="modal-info">
+            <h2 id="modalTitle">BRAND TITLE</h2>
+            <div class="brand-persona">
+              <h3>THE PERSONA</h3>
+              <p id="modalPersona">Detailed description about the rebranding, the logo creation process, and the core persona behind the identity.</p>
+              
+              <div class="brand-specs">
+                <div class="spec-group">
+                  <h4>PALETTE</h4>
+                  <div class="color-swatches" id="modalColors">
+                    <!-- Swatches injected via JS -->
+                  </div>
+                </div>
+                <div class="spec-group">
+                  <h4>TYPOGRAPHY</h4>
+                  <p id="modalType">Primary: Anton<br>Secondary: Space Mono</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title staggered-item">
+            <span class="block">CREATING</span>
+            <span class="block highlight">BRUTAL</span>
+            <span class="block">IMPACT</span>
+          </h1>
+          <div class="hero-sub staggered-item">
+            <p>Independent Graphic Designer shaping brand identities that break the grid and refuse to be ignored.</p>
+          </div>
+        </div>
+        
+        <div class="hero-visual staggered-item">
+          <!-- Abstract Graphic/Shape + Designer Photo -->
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="designer-photo-wrapper">
+             <img src="https://picsum.photos/seed/designer/600/800" alt="Graphic Designer" class="designer-photo">
+          </div>
+        </div>
+      </section>
+
+      <!-- Selected Works Section (Horizontal Scroll) -->
+      <section id="work" class="works-section">
+        <div class="works-header">
+          <h2>SELECTED WORKS</h2>
+        </div>
+        <div class="works-container">
+          <div class="works-track">
+            <!-- Mock Project 1 -->
+            <div class="work-card" data-project="neon-riot">
+              <div class="work-image-wrapper">
+                <img src="https://picsum.photos/seed/acid1/800/1000" alt="Neon Riot Branding">
+              </div>
+              <div class="work-info">
+                <h3>NEON RIOT</h3>
+                <p>Branding / Identity / 2025</p>
+              </div>
+            </div>
+            <!-- Mock Project 2 -->
+            <div class="work-card" data-project="void-arch">
+              <div class="work-image-wrapper">
+                <img src="https://picsum.photos/seed/acid2/800/1000" alt="Void Architecture">
+              </div>
+              <div class="work-info">
+                <h3>VOID ARCHITECTURE</h3>
+                <p>Branding / Spatial / 2026</p>
+              </div>
+            </div>
+            <!-- Mock Project 3 -->
+            <div class="work-card" data-project="acid-conc">
+              <div class="work-image-wrapper">
+                <img src="https://picsum.photos/seed/acid3/800/1000" alt="Acid Concrete">
+              </div>
+              <div class="work-info">
+                <h3>ACID CONCRETE</h3>
+                <p>Branding / Typeface / 2025</p>
+              </div>
+            </div>
+            <!-- Mock Project 4 -->
+            <div class="work-card" data-project="echo-fest">
+              <div class="work-image-wrapper">
+                <img src="https://picsum.photos/seed/acid4/800/1000" alt="Echo Festival">
+              </div>
+              <div class="work-info">
+                <h3>ECHO FESTIVAL</h3>
+                <p>Branding / Motion / 2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Social Media Designs (Interactive Canvas) -->
+      <section id="social" class="social-section">
+        <div class="section-title marquee-container">
+          <div class="text-marquee">
+            <span>SOCIAL MEDIA CANVASES / GRAB AND DRAG TO INTERACT / </span>
+            <span>SOCIAL MEDIA CANVASES / GRAB AND DRAG TO INTERACT / </span>
+            <span>SOCIAL MEDIA CANVASES / GRAB AND DRAG TO INTERACT / </span>
+            <span>SOCIAL MEDIA CANVASES / GRAB AND DRAG TO INTERACT / </span>
+          </div>
+        </div>
+        <div class="interactive-canvas">
+          <div class="drag-item" style="top: 10%; left: 10%;"><img src="https://picsum.photos/seed/drag1/400/400" alt="Social Post"></div>
+          <div class="drag-item" style="top: 20%; left: 60%;"><img src="https://picsum.photos/seed/drag2/400/500" alt="Social Post"></div>
+          <div class="drag-item" style="top: 50%; left: 30%;"><img src="https://picsum.photos/seed/drag3/500/400" alt="Social Post"></div>
+          <div class="drag-item" style="top: 60%; left: 70%;"><img src="https://picsum.photos/seed/drag4/400/400" alt="Social Post"></div>
+          <div class="drag-instruction">DRAG TO EXPLORE</div>
+        </div>
+      </section>
+
+      <!-- About Designer Section -->
+      <section id="about" class="about-designer-section">
+        <div class="about-grid">
+          <div class="about-visual">
+            <div class="about-image-mask">
+              <img src="https://picsum.photos/seed/designer2/800/1000" alt="Graphic designer working" class="about-img-parallax">
+            </div>
+            <div class="about-badge">EST. 2026 // VOID</div>
+          </div>
+          <div class="about-text">
+            <h2 class="about-title">THE<br>DESIGNER</h2>
+            <div class="about-paragraph">
+              <p>I am an independent graphic designer and art director based in the void. Specializing in brutalist typography, spatial identities, and disrupting the standard algorithm.</p>
+              <p>My approach is simple: break the grid, embrace the noise, and force the audience to feel something.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About / Manifesto Section -->
+      <section id="manifesto" class="about-section">
+        <div class="manifesto">
+          <p class="kinetic-text">DESIGN IS NOT PRETTY.</p>
+          <p class="kinetic-text highlight">IT IS A TOOL.</p>
+          <p class="kinetic-text">IT IS BRUTAL.</p>
+          <p class="kinetic-text highlight">IT COMMANDS.</p>
+        </div>
+      </section>
+
+      <!-- Footer / Contact Section -->
+      <footer id="contact" class="footer">
+        <div class="footer-top-row">
+          <div class="status">
+            <span class="status-dot"></span> OPEN FOR COMMISSIONS // 2026
+          </div>
+          <div class="location">
+            LAT 40.7128° N / LONG 74.0060° W // THE VOID
+          </div>
+        </div>
+
+        <div class="footer-content">
+          <div class="footer-header-flex">
+            <h2 class="footer-title">LET'S BREAK THINGS</h2>
+            <p class="footer-subtext">HAVE A VISION THAT REFUSES TO BE IGNORED?<br>DROP A LINE. NO SPAM ALLOWED.</p>
+          </div>
+          <a href="mailto:hello@acidconcrete.com" class="massive-link magnetic">
+            <span class="link-text">HELLO@ACIDCONCRETE.COM</span>
+          </a>
+          <div class="footer-socials">
+            <a href="#" class="magnetic">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              FACEBOOK
+            </a>
+            <a href="#" class="magnetic">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              WHATSAPP
+            </a>
+            <a href="#" class="magnetic">
+              <!-- Replaced with proper solid Behance SVG path avoiding stroke conflicts -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: currentColor; stroke: none !important;"><path d="M22 7.175H14.77v2.156h7.23V7.175zm-6.143 5.437c-.126-1.573 1.054-2.613 2.502-2.613 1.547 0 2.457.904 2.545 2.193h-3.626c-.035.795.539 1.345 1.365 1.345.837 0 1.252-.403 1.455-.91h1.792c-.36 1.464-1.782 2.37-3.328 2.37-2.316 0-3.606-1.517-3.606-3.66zm1.382-.72h2.09c-.06-.71-.564-1.077-1.054-1.077-.457 0-.962.333-1.036 1.077zm-9.066 3.12H2V2.88h6.29c3.076 0 4.632 1.332 4.632 3.52 0 1.636-1.122 2.572-2.313 2.923 1.636.326 2.827 1.462 2.827 3.498 0 2.493-1.765 3.99-5.182 3.99zm-4.14-2.035h1.966c1.365 0 2.223-.623 2.223-1.85 0-1.226-.858-1.793-2.223-1.793H4.032v3.644zm0-5.326h1.77c1.176 0 1.93-.526 1.93-1.597 0-1.072-.754-1.56-1.93-1.56H4.033v3.158z"/></svg>
+              BEHANCE
+            </a>
+            <a href="#" class="magnetic">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              INSTAGRAM
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>©2026 ACID CONCRETE. ALL RIGHTS RESERVED.</span>
+          <span>NO TEMPLATES ALLOWED.</span>
+        </div>
+      </footer>>
+      
+    </main>
+  </div>
+
+  <!-- GSAP Core & ScrollTrigger & Draggable -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
+  
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+  
+  <!-- Custom Script -->
+  <script src="main.js"></script>
+</body>
+</html>
